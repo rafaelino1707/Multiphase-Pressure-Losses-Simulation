@@ -1,5 +1,5 @@
 #include <iostream>
-#include "headers/pipe_geometry.hpp"
+#include "../headers/pipe_geometry.hpp"
 
 using namespace std;
 
@@ -27,12 +27,12 @@ double Pipe::diameter(double x) {
             else if (section.type == "taper") {
                 return section.initial_diameter
                  + (section.final_diameter - section.initial_diameter) 
-                 * x / section.length;
+                 * local_x / section.length;
             }
         }
 
         xn = xn1;
     }
 
-    return -1
+    return -1;
 }
