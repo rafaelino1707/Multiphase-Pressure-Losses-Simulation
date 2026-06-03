@@ -1,5 +1,6 @@
 #include "../headers/pipe_geometry.hpp"
 #include <iostream>
+#include "CoolProp.h"
 using namespace std;
 
 int main() {
@@ -14,5 +15,10 @@ int main() {
     pipe1.add_geometry(section3);
 
     cout << "Pipe Diameter = " << pipe1.diameter(0.48) << "m\n";
+    // double psat = CoolProp::PropsSI("P", "T", 273.15, "Q", 0, "NitrousOxide");
+    double psat = CoolProp::PropsSI("P", "T", 373.15, "Q", 0, "Water");
+    cout << "Psat = " << psat / 1e5 << " bar\n";
+
+    pipe1.run_solver(50, 0, 1.5, 0.001, 2e-4, "NitrousOxide");
     return 0;
 }

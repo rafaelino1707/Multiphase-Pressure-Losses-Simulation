@@ -18,9 +18,21 @@ class Pipe {
 
         void add_geometry(Pipe_Section section);
 
+        void run_solver(double P1, double T_C, double mdot, double dx, double mu, std::string FLUID);
+
         double diameter(double x);
-        double total_length;
+        
         std::vector<Pipe_Section> sections;
+
+        double total_length() {
+            double total = 0.0;
+
+            for (const Pipe_Section& section : sections) {
+                total += section.length;
+            }
+
+            return total;
+        }
         
 };
 
