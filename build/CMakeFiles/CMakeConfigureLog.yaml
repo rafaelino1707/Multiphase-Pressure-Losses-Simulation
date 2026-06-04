@@ -596,3 +596,78 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFileCXX.cmake:89 (try_compile)"
+      - "externals/CoolProp/dev/cmake/Modules/FindSharedPtr.cmake:50 (check_include_file_cxx)"
+      - "externals/CoolProp/CMakeLists.txt:484 (find_shared_ptr)"
+    checks:
+      - "Looking for C++ include memory"
+    directories:
+      source: "/home/lino/Multiphase-Pressure-Losses-Simulation/build/CMakeFiles/CMakeScratch/TryCompile-xkDQuG"
+      binary: "/home/lino/Multiphase-Pressure-Losses-Simulation/build/CMakeFiles/CMakeScratch/TryCompile-xkDQuG"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lino/Multiphase-Pressure-Losses-Simulation/externals/CoolProp/dev/cmake/Modules/"
+    buildResult:
+      variable: "HAVE_STD_MEMORY_HEADER"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lino/Multiphase-Pressure-Losses-Simulation/build/CMakeFiles/CMakeScratch/TryCompile-xkDQuG'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_84b5e/fast
+        gmake[1]: Entering directory '/home/lino/Multiphase-Pressure-Losses-Simulation/build/CMakeFiles/CMakeScratch/TryCompile-xkDQuG'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_84b5e.dir/build.make CMakeFiles/cmTC_84b5e.dir/build
+        gmake[2]: Entering directory '/home/lino/Multiphase-Pressure-Losses-Simulation/build/CMakeFiles/CMakeScratch/TryCompile-xkDQuG'
+        Building CXX object CMakeFiles/cmTC_84b5e.dir/CheckIncludeFile.cxx.o
+        /usr/bin/c++   -std=gnu++17 -o CMakeFiles/cmTC_84b5e.dir/CheckIncludeFile.cxx.o -c /home/lino/Multiphase-Pressure-Losses-Simulation/build/CMakeFiles/CMakeScratch/TryCompile-xkDQuG/CheckIncludeFile.cxx
+        Linking CXX executable cmTC_84b5e
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_84b5e.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_84b5e.dir/CheckIncludeFile.cxx.o -o cmTC_84b5e 
+        gmake[2]: Leaving directory '/home/lino/Multiphase-Pressure-Losses-Simulation/build/CMakeFiles/CMakeScratch/TryCompile-xkDQuG'
+        gmake[1]: Leaving directory '/home/lino/Multiphase-Pressure-Losses-Simulation/build/CMakeFiles/CMakeScratch/TryCompile-xkDQuG'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "externals/CoolProp/dev/cmake/Modules/FindSharedPtr.cmake:59 (check_cxx_source_compiles)"
+      - "externals/CoolProp/CMakeLists.txt:484 (find_shared_ptr)"
+    checks:
+      - "Performing Test HAVE_SHARED_PTR_IN_STD_NAMESPACE"
+    directories:
+      source: "/home/lino/Multiphase-Pressure-Losses-Simulation/build/CMakeFiles/CMakeScratch/TryCompile-r0wnZH"
+      binary: "/home/lino/Multiphase-Pressure-Losses-Simulation/build/CMakeFiles/CMakeScratch/TryCompile-r0wnZH"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lino/Multiphase-Pressure-Losses-Simulation/externals/CoolProp/dev/cmake/Modules/"
+    buildResult:
+      variable: "HAVE_SHARED_PTR_IN_STD_NAMESPACE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lino/Multiphase-Pressure-Losses-Simulation/build/CMakeFiles/CMakeScratch/TryCompile-r0wnZH'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0d704/fast
+        gmake[1]: Entering directory '/home/lino/Multiphase-Pressure-Losses-Simulation/build/CMakeFiles/CMakeScratch/TryCompile-r0wnZH'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0d704.dir/build.make CMakeFiles/cmTC_0d704.dir/build
+        gmake[2]: Entering directory '/home/lino/Multiphase-Pressure-Losses-Simulation/build/CMakeFiles/CMakeScratch/TryCompile-r0wnZH'
+        Building CXX object CMakeFiles/cmTC_0d704.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_SHARED_PTR_IN_STD_NAMESPACE  -std=gnu++17 -o CMakeFiles/cmTC_0d704.dir/src.cxx.o -c /home/lino/Multiphase-Pressure-Losses-Simulation/build/CMakeFiles/CMakeScratch/TryCompile-r0wnZH/src.cxx
+        Linking CXX executable cmTC_0d704
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0d704.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_0d704.dir/src.cxx.o -o cmTC_0d704 
+        gmake[2]: Leaving directory '/home/lino/Multiphase-Pressure-Losses-Simulation/build/CMakeFiles/CMakeScratch/TryCompile-r0wnZH'
+        gmake[1]: Leaving directory '/home/lino/Multiphase-Pressure-Losses-Simulation/build/CMakeFiles/CMakeScratch/TryCompile-r0wnZH'
+        
+      exitCode: 0
+...

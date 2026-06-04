@@ -16,6 +16,7 @@ add_executable(main
     source/main.cpp
     source/pipe_geometry.cpp
     source/pipe_solver.cpp
+    source/byphasic_model.cpp
 )
 
 target_include_directories(main PRIVATE

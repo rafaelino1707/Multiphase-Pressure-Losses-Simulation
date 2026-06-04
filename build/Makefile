@@ -213,6 +213,30 @@ CoolProp/fast:
 	$(MAKE) $(MAKESILENT) -f externals/CoolProp/CMakeFiles/CoolProp.dir/build.make externals/CoolProp/CMakeFiles/CoolProp.dir/build
 .PHONY : CoolProp/fast
 
+source/byphasic_model.o: source/byphasic_model.cpp.o
+.PHONY : source/byphasic_model.o
+
+# target to build an object file
+source/byphasic_model.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/source/byphasic_model.cpp.o
+.PHONY : source/byphasic_model.cpp.o
+
+source/byphasic_model.i: source/byphasic_model.cpp.i
+.PHONY : source/byphasic_model.i
+
+# target to preprocess a source file
+source/byphasic_model.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/source/byphasic_model.cpp.i
+.PHONY : source/byphasic_model.cpp.i
+
+source/byphasic_model.s: source/byphasic_model.cpp.s
+.PHONY : source/byphasic_model.s
+
+# target to generate assembly for a file
+source/byphasic_model.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/source/byphasic_model.cpp.s
+.PHONY : source/byphasic_model.cpp.s
+
 source/main.o: source/main.cpp.o
 .PHONY : source/main.o
 
@@ -301,6 +325,9 @@ help:
 	@echo "... generate_headers"
 	@echo "... CoolProp"
 	@echo "... main"
+	@echo "... source/byphasic_model.o"
+	@echo "... source/byphasic_model.i"
+	@echo "... source/byphasic_model.s"
 	@echo "... source/main.o"
 	@echo "... source/main.i"
 	@echo "... source/main.s"

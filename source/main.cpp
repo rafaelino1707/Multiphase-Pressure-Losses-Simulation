@@ -7,8 +7,8 @@ int main() {
     Pipe pipe1;
 
     Pipe_Section section1 = {"D_constant", 10.9, 10.9, 0.2};
-    Pipe_Section section2 = {"taper", 10.9, 8, 0.3};
-    Pipe_Section section3 = {"D_constant", 8, 8, 0.4};
+    Pipe_Section section2 = {"taper", 10.9, 4, 0.3};
+    Pipe_Section section3 = {"D_constant", 4, 4, 0.4};
 
     pipe1.add_geometry(section1);
     pipe1.add_geometry(section2);
